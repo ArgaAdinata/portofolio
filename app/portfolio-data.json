@@ -1,0 +1,79 @@
+{
+  "certificates": [
+    {
+      "title": "Samsung Solve for Tomorrow",
+      "issuer": "Samsung",
+      "year": "2025",
+      "image": "/certi/certi_sft.png"
+    },
+    {
+      "title": "Huawei Certification",
+      "issuer": "Huawei",
+      "year": "2025",
+      "image": "/certi/certi_huawei.png"
+    },
+    {
+      "title": "Oracle Academy Certification",
+      "issuer": "Oracle Academy",
+      "year": "2024",
+      "image": "/certi/certi_oracle.png"
+    }
+  ],
+  "projects": [
+    {
+      "title": "LMS Sekolah Alam",
+      "description": "A Learning Management System tailored for Sekolah Alam, facilitating digital learning and administration.",
+      "image": "/placeholder-project-1.jpg",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+      "roles": ["Frontend Developer"],
+      "features": [
+        "Student and teacher dashboards",
+        "Digital assignment submission",
+        "Interactive course materials"
+      ],
+      "challenges": "Adapting the system to the unique environment of Sekolah Alam while ensuring a user-friendly interface for non-technical staff."
+    },
+    {
+      "title": "SkyClub Rental System",
+      "description": "A comprehensive booking and management system for SkyClub sports fields.",
+      "image": "/placeholder-project-2.jpg",
+      "technologies": ["Trello", "UML Diagram", "Selenium"],
+      "roles": ["Product Manager", "System Analyst", "QA"],
+      "features": [
+        "Real-time booking availability",
+        "Payment processing",
+        "Admin management panel",
+        "User membership system"
+      ],
+      "challenges": "Coordinating with stakeholders to define requirements and ensuring the booking logic handled conflicting schedules accurately."
+    },
+    {
+      "title": "OOP Learning Game",
+      "description": "A Crossy Road-style arcade game developed to apply and master Object-Oriented Programming concepts.",
+      "image": "/placeholder-project-3.jpg",
+      "technologies": ["Java", "Object-Oriented Programming", "Game Design"],
+      "roles": ["Java Game Developer"],
+      "features": [
+        "Procedural terrain generation",
+        "Custom character skins",
+        "Score tracking",
+        "Dynamic obstacle movement"
+      ],
+      "challenges": "Implementing core game mechanics using pure Object-Oriented Programming principles, specifically utilizing inheritance for diverse game objects and polymorphism for their behaviors."
+    },
+    {
+      "title": "Property Website",
+      "description": "A real estate platform developed as a hands-on project to master the Laravel framework and MVC architecture.",
+      "image": "/placeholder-project-1.jpg",
+      "technologies": ["Laravel", "Tailwind CSS", "Full Stack Development"],
+      "roles": ["Web Developer"],
+      "features": [
+        "Property listing management",
+        "User authentication system",
+        "Advanced search filters",
+        "Responsive property details view"
+      ],
+      "challenges": "Understanding and implementing the MVC (Model-View-Controller) pattern effectively, along with mastering Laravel's Eloquent ORM for efficient database interactions."
+    }
+  ]
+}

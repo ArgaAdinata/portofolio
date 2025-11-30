@@ -19,8 +19,112 @@
   }
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-left: 1px solid #fbbf24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);
+  border-radius: 6px;
+  border: 2px solid #fef3c7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d97706 0%, #b45309 100%);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f59e0b #fef3c7;
+}
+
+/* Polaroid Effect */
+.polaroid {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05) !important;
+  z-index: 10;
+}
+
+/* 3D Flip Card */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Paper texture */
+@media (min-width: 768px) {
+  .paper-texture {
+    background-image: 
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.01) 2px,
+        rgba(0,0,0,0.01) 4px
+      );
+  }
+}
+
+.bg-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.hand-drawn-border {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.notebook-paper {
+  background-color: #fefce8;
+  background-image: 
+    repeating-linear-gradient(
+      transparent,
+      transparent 31px,
+      #e5e7eb 31px,
+      #e5e7eb 32px
+    ),
+    linear-gradient(to right, #fca5a5 0px, #fca5a5 2px, transparent 2px);
+  background-position: 0 0, 24px 0;
+  padding-left: 40px;
+}
+
+@media (min-width: 768px) {
+  .notebook-paper {
+    background-position: 0 0, 40px 0;
+    padding-left: 60px;
+  }
+}
+
