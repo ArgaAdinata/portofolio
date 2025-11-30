@@ -299,9 +299,13 @@ export default function Home() {
             >
               {/* Polaroid Frame */}
               <div className="bg-white p-4 shadow-2xl transform rotate-3">
-                <div className="w-full aspect-square bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden relative group">
-                  <span className="text-gray-500 text-sm text-center group-hover:scale-110 transition-transform duration-500">Your Photo</span>
-                  <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay"></div>
+                <div className="w-full aspect-square bg-gray-100 overflow-hidden relative group">
+                  <img 
+                    src="/profile.png" 
+                    alt="Arga Adinata" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none"></div>
                 </div>
                 <div className="text-center mt-3 pb-2">
                   <p className="text-sm text-gray-600 font-semibold" style={{ fontFamily: 'Georgia, serif' }}>Arga Adinata</p>
@@ -357,7 +361,7 @@ export default function Home() {
               style={{
               fontFamily: 'Georgia, serif'
             }}>
-              A passionate <span className="font-semibold text-amber-700">Full-Stack Developer</span> crafting beautiful and functional web experiences
+              A passionate <span className="font-semibold text-amber-700">Informatics Student & Full-Stack Developer</span> crafting beautiful and functional web experiences
             </motion.p>
             <motion.p 
               variants={{
@@ -372,8 +376,8 @@ export default function Home() {
               style={{
               fontFamily: 'Georgia, serif'
             }}>
-              I specialize in building modern web applications with clean code and intuitive designs. 
-              Let's create something amazing together.
+              I specialize in building modern web applications using Next.js, Laravel, and Tailwind CSS. 
+              Always eager to learn and create something amazing.
             </motion.p>
             
             <motion.div 
@@ -441,13 +445,13 @@ export default function Home() {
                 className="space-y-4"
               >
                 <p className="text-lg text-gray-700 leading-relaxed" style={{ fontFamily: 'Georgia, serif' }}>
-                  I'm a passionate developer with a love for creating beautiful, functional web experiences. 
-                  Currently focusing on modern web technologies, I've worked on diverse projects ranging 
-                  from educational platforms to interactive web applications.
+                  I'm an undergraduate student passionate about software engineering and web development. 
+                  I love exploring new technologies and applying them to solve real-world problems, 
+                  from educational platforms to interactive games.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed" style={{ fontFamily: 'Georgia, serif' }}>
-                  My approach combines technical expertise with creative problem-solving, always keeping 
-                  the user experience at the forefront of every decision.
+                  With a strong foundation in both frontend and backend development, I strive to write 
+                  clean, efficient code while delivering intuitive user experiences.
                 </p>
               </motion.div>
               
@@ -460,15 +464,15 @@ export default function Home() {
               >
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold text-amber-700 mb-2">🎯 What I Do</h3>
-                  <p className="text-gray-600">Full-stack development, UI/UX design, and turning ideas into reality</p>
+                  <p className="text-gray-600">Web Development (Next.js, Laravel), Game Dev (Java), and System Analysis</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold text-amber-700 mb-2">💼 Experience</h3>
-                  <p className="text-gray-600">Building modern web applications with passion</p>
+                  <p className="text-gray-600">Active student with hands-on project experience and recent achievements</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold text-amber-700 mb-2">🚀 Mission</h3>
-                  <p className="text-gray-600">Creating impactful digital solutions that make a difference</p>
+                  <p className="text-gray-600">To continuously learn, innovate, and contribute to impactful digital solutions</p>
                 </div>
               </motion.div>
             </div>
@@ -628,8 +632,12 @@ export default function Home() {
                     }}
                   >
                     <div className="bg-white p-4 shadow-lg group-hover:shadow-2xl transition-shadow">
-                      <div className="w-full aspect-video bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
-                        <span className="text-gray-400 text-sm">Project Screenshot</span>
+                      <div className="w-full aspect-video bg-gray-100 overflow-hidden relative">
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                     </div>
                   </motion.div>
@@ -817,8 +825,12 @@ export default function Home() {
               {/* Modal Content */}
               <div className="pr-8 py-8">
                 {/* Project Image */}
-                <div className="w-full aspect-video bg-gradient-to-br from-amber-100 to-orange-100 rounded-lg mb-6 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Project Screenshot</span>
+                <div className="w-full aspect-video bg-gray-100 rounded-lg mb-6 overflow-hidden">
+                  <img 
+                    src={projects[selectedProject].image} 
+                    alt={projects[selectedProject].title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Project Title */}

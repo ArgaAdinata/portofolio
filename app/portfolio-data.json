@@ -23,7 +23,7 @@
     {
       "title": "LMS Sekolah Alam",
       "description": "A Learning Management System tailored for Sekolah Alam, facilitating digital learning and administration.",
-      "image": "/placeholder-project-1.jpg",
+      "image": "/project/LMS.png",
       "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
       "roles": ["Frontend Developer"],
       "features": [
@@ -36,7 +36,7 @@
     {
       "title": "SkyClub Rental System",
       "description": "A comprehensive booking and management system for SkyClub sports fields.",
-      "image": "/placeholder-project-2.jpg",
+      "image": "/project/SkyClub.png",
       "technologies": ["Trello", "UML Diagram", "Selenium"],
       "roles": ["Product Manager", "System Analyst", "QA"],
       "features": [
@@ -50,7 +50,7 @@
     {
       "title": "OOP Learning Game",
       "description": "A Crossy Road-style arcade game developed to apply and master Object-Oriented Programming concepts.",
-      "image": "/placeholder-project-3.jpg",
+      "image": "/project/OOP.jpg",
       "technologies": ["Java", "Object-Oriented Programming", "Game Design"],
       "roles": ["Java Game Developer"],
       "features": [
@@ -64,7 +64,7 @@
     {
       "title": "Property Website",
       "description": "A real estate platform developed as a hands-on project to master the Laravel framework and MVC architecture.",
-      "image": "/placeholder-project-1.jpg",
+      "image": "/project/Realestate.png",
       "technologies": ["Laravel", "Tailwind CSS", "Full Stack Development"],
       "roles": ["Web Developer"],
       "features": [
