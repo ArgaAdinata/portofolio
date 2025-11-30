@@ -361,7 +361,7 @@ export default function Home() {
               style={{
               fontFamily: 'Georgia, serif'
             }}>
-              A passionate <span className="font-semibold text-amber-700">Informatics Student & Full-Stack Developer</span> crafting beautiful and functional web experiences
+              A passionate <span className="font-semibold text-amber-700">Software Engineering Student & Full-Stack Developer</span> crafting beautiful and functional web experiences
             </motion.p>
             <motion.p 
               variants={{
@@ -464,7 +464,7 @@ export default function Home() {
               >
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold text-amber-700 mb-2">🎯 What I Do</h3>
-                  <p className="text-gray-600">Web Development (Next.js, Laravel), Game Dev (Java), and System Analysis</p>
+                  <p className="text-gray-600">Web Development (Next.js, Laravel), OOP (Java), System Analysis, and Quality Assurance</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold text-amber-700 mb-2">💼 Experience</h3>
